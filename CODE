@@ -1,0 +1,15 @@
+import random
+def game():
+  weapons = ["rock", "paper", "scissors"]
+  player = input("Rock, Paper, or Scissors?: ")
+  bot = random.choice(weapons)
+  print(player)
+  print('vs.')
+  print(bot)
+  if bot == "rock" and player == "paper" or bot == "scissors" and player == "paper":
+    return "You Lose!"
+  elif bot == player:
+    return "It is a tie!"
+  return "You Win!"
+
+print(game())
